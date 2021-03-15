@@ -1,16 +1,19 @@
 $default: #436372;
+$atext: #7b7b7b;
 $title: #191919;
 $accent: #1a1a1a;
+$footer-title: #1f2044;
+$btnclr: #a3bbc8;
 
 
 
-%roboto-400{
-  font-family: 'Roboto-Regular', sans-serif;
+%rubik-400{
+  font-family: 'Rubik-Regular', sans-serif;
   font-weight: 400;
 }
 
-%roboto-500{
-  font-family: 'Roboto-Medium', sans-serif;
+%rubik-500{
+  font-family: 'Rubik-Medium', sans-serif;
   font-weight: 500;
 }
 
@@ -22,4 +25,12 @@ $accent: #1a1a1a;
 %dmsans-700{
   font-family: 'DMSans-Bold', sans-serif;
   font-weight: 700;
+}
+
+%btn{
+  background-color: $btnclr;
+  color: #fff;
+  border: none;
+  padding: 12px 15px;
+  @extend %rubik-400;
 }
