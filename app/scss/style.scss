@@ -1,6 +1,7 @@
 @import 'vars';
 @import 'fonts';
 @import 'reset';
+@import 'libs';
 @import 'global';
 
 .header{
@@ -182,6 +183,77 @@
     border: none;
   }
 }
+
+.top-slider{
+  &__item{
+    display: flex !important;
+    justify-content: space-between;
+  }
+  &__content{
+    margin-right: 100px;
+  }
+  &__title{
+    font-size: 72px;
+    @extend %rubik-500;
+    line-height: 70px;
+    margin-bottom: 36px;
+  }
+  &__text{
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 40px;
+  }
+  &__link{
+    display: block;
+    width: 200px;
+    @extend %btn;
+    padding: 20px 25px;
+    text-transform: capitalize;
+    font-size: 15px;
+    line-height: 12px;
+    position: relative;
+    &::after{
+      content: '';
+      position: absolute;
+      width: 22px;
+      height: 9px;
+      right: 20px;
+      background-image: url('../images/arrow.png');
+      z-index: 1;
+    }
+  }
+  .slick-dots{
+    padding: 200px 0 40px;
+    display: flex;
+    justify-content: center;
+    li{
+      padding: 0;
+      font-size: 18px;
+      button{
+        margin: 0 5px;
+        border: none;
+        background-color: #fff;
+        opacity: 0.6;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+      }
+    }
+    .slick-active{
+      button{
+        // background-color: #fff;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.top-slider__inner{
+  padding: 200px 285px 0;
+  background-color: $bgc;
+}
+
+
 
 
 @import 'media';
