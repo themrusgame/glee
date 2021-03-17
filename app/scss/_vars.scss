@@ -35,3 +35,10 @@ $bgc: #fcd7b6;
   padding: 12px 15px;
   @extend %rubik-400;
 }
+
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+@function min($numbers...) {
+  @return m#{i}x(#{$numbers});
+}

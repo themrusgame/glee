@@ -17,9 +17,20 @@ body{
 }
 
 .container{
-  width: 1770px;
+  max-width: 1170px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.header__container,
+.top-slider__container{
+  max-width: 1770px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.container{
+
 }
 
 a{
