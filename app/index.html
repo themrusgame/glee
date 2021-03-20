@@ -10,7 +10,7 @@
 
 <body>
   <header class="header">
-    <div class="container">
+    <div class="container header__container">
       <div class="header__inner">
         <a class="logo" href="#">
           <img class="logo__img" src="images/logo.png" alt="logo">
@@ -39,20 +39,20 @@
         </nav>
         <div class="user-nav">
           <a class="user-nav__link user-nav__search" href="#">
-            <img class="user-nav__img" src="images/search.png" alt="Search">
+            <img class="user-nav__img" src="images/icons/search.png" alt="Search">
           </a>
           <div class="user-nav__info">
             <a class="user-nav__link" href="#">
-              <img class="user-nav__img" src="images/heart.png" alt="Heart">
+              <img class="user-nav__img" src="images/icons/heart.png" alt="Heart">
               <span class="user-nav__num">0</span>
             </a>
             <a class="user-nav__link" href="#">
-              <img class="user-nav__img" src="images/bask.png" alt="Bask">
+              <img class="user-nav__img" src="images/icons/bask.png" alt="Bask">
               <span class="user-nav__num">0</span>
             </a>
           </div>
           <a class="user-nav__link user-nav__smenu" href="#">
-            <img class="user-nav__img" src="images/smenu.png" alt="Smenu">
+            <img class="user-nav__img" src="images/icons/smenu.png" alt="Smenu">
           </a>
         </div>
       </div>
@@ -60,7 +60,7 @@
   </header>
   <main class="main">
     <section class="top-slider">
-      <div class="container">
+      <div class="container top-slider__container">
         <div class="top-slider__inner">
           <div class="top-slider__item">
             <div class="top-slider__content">
@@ -108,8 +108,425 @@
             <img class="top-slider__img" src="images/slider/slider-1.png" alt="slider img">
           </div>
         </div>
+        <div class="top-slider__info">
+          <div class="top-slider__info-items">
+            <div class="top-slider__info-item">
+              <h6 class="top-slider__info-title top-slider__info-support">
+                Support 24/7.
+              </h6>
+              <p class="top-slider__info-text">
+                Contact us 24 hours a day,
+                7 days a week.
+              </p>
+            </div>
+            <div class="top-slider__info-item top-slider__info-delivery">
+              <h6 class="top-slider__info-title">
+                Delivery.
+              </h6>
+              <p class="top-slider__info-text">
+                Free shipping on all US order.
+              </p>
+            </div>
+            <div class="top-slider__info-item top-slider__info-payment">
+              <h6 class="top-slider__info-title">
+                100% Payment secure.
+              </h6>
+              <p class="top-slider__info-text ">
+                We ensure secure payment
+                with PEV.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
+    <section class="products">
+      <div class="container">
+        <h3 class="title">
+          Products of the week
+        </h3>
+        <div class="products__buttons">
+          <button type="button" class="products__btn mixitup-control-active" data-filter="all">All</button>
+          <button type="button" class="products__btn" data-filter=".category-a">Furnitures</button>
+          <button type="button" class="products__btn" data-filter=".category-b">Chairs</button>
+          <button type="button" class="products__btn" data-filter=".category-c">Lighting</button>
+          <button type="button" class="products__btn" data-filter=".category-d">Decor</button>
+        </div>
+        <div class="products__items">
+          <div class="products-item mix category-abcd">
+            <img src="images/products/1.png" alt="product">
+            <div class="products-item__link-box">
+              <a class="products-item__link" href="#">
+                <img src="images/icons/product-search.png" alt="product icon">
+              </a>
+              <a class="products-item__link" href="#">
+                <img src="images/icons/product-bag.png" alt="product icon">
+              </a>
+              <a class="products-item__link" href="#">
+                <img src="images/icons/product-like.png" alt="product icon">
+              </a>
+            </div>
+            <div class="products-item__text">
+              <h5 class="products-item__title">
+                Wooden radio
+              </h5>
+              <p class="products-item__price">
+                $29.00
+              </p>
+            </div>
+          </div>
+          <div class="products-item mix category-a">
+            <img src="images/products/2.png" alt="product">
+            <div class="products-item__link-box">
+              <a class="products-item__link" href="#">
+                <img src="images/icons/product-search.png" alt="product icon">
+              </a>
+              <a class="products-item__link" href="#">
+                <img src="images/icons/product-bag.png" alt="product icon">
+              </a>
+              <a class="products-item__link" href="#">
+                <img src="images/icons/product-like.png" alt="product icon">
+              </a>
+            </div>
+            <div class="products-item__text">
+              <h5 class="products-item__title">
+                Wooden chair
+              </h5>
+              <p class="products-item__price">
+                $29.00
+              </p>
+            </div>
+          </div>
+          <div class="products-item mix category-b">
+            <img src="images/products/3.png" alt="product">
+            <div class="products-item__link-box">
+              <a class="products-item__link" href="#">
+                <img src="images/icons/product-search.png" alt="product icon">
+              </a>
+              <a class="products-item__link" href="#">
+                <img src="images/icons/product-bag.png" alt="product icon">
+              </a>
+              <a class="products-item__link" href="#">
+                <img src="images/icons/product-like.png" alt="product icon">
+              </a>
+            </div>
+            <div class="products-item__text">
+              <h5 class="products-item__title">
+                White chair
+              </h5>
+              <p class="products-item__price">
+                $29.00
+              </p>
+            </div>
+          </div>
+          <div class="products-item mix category-b">
+            <img src="images/products/4.png" alt="product">
+            <div class="products-item__link-box">
+              <a class="products-item__link" href="#">
+                <img src="images/icons/product-search.png" alt="product icon">
+              </a>
+              <a class="products-item__link" href="#">
+                <img src="images/icons/product-bag.png" alt="product icon">
+              </a>
+              <a class="products-item__link" href="#">
+                <img src="images/icons/product-like.png" alt="product icon">
+              </a>
+            </div>
+            <div class="products-item__text">
+              <h5 class="products-item__title">
+                Retro table
+              </h5>
+              <p class="products-item__price">
+                $29.00
+              </p>
+            </div>
+          </div>
+          <div class="products-item mix category-c">
+            <img src="images/products/5.png" alt="product">
+            <div class="products-item__link-box">
+              <a class="products-item__link" href="#">
+                <img src="images/icons/product-search.png" alt="product icon">
+              </a>
+              <a class="products-item__link" href="#">
+                <img src="images/icons/product-bag.png" alt="product icon">
+              </a>
+              <a class="products-item__link" href="#">
+                <img src="images/icons/product-like.png" alt="product icon">
+              </a>
+            </div>
+            <div class="products-item__text">
+              <h5 class="products-item__title">
+                Wooden radio
+              </h5>
+              <p class="products-item__price">
+                $29.00
+              </p>
+            </div>
+          </div>
+          <div class="products-item mix category-c">
+            <img src="images/products/6.png" alt="product">
+            <div class="products-item__link-box">
+              <a class="products-item__link" href="#">
+                <img src="images/icons/product-search.png" alt="product icon">
+              </a>
+              <a class="products-item__link" href="#">
+                <img src="images/icons/product-bag.png" alt="product icon">
+              </a>
+              <a class="products-item__link" href="#">
+                <img src="images/icons/product-like.png" alt="product icon">
+              </a>
+            </div>
+            <div class="products-item__text">
+              <h5 class="products-item__title">
+                Wooden chair
+              </h5>
+              <p class="products-item__price">
+                $29.00
+              </p>
+            </div>
+          </div>
+          <div class="products-item mix category-d">
+            <img src="images/products/7.png" alt="product">
+            <div class="products-item__link-box">
+              <a class="products-item__link" href="#">
+                <img src="images/icons/product-search.png" alt="product icon">
+              </a>
+              <a class="products-item__link" href="#">
+                <img src="images/icons/product-bag.png" alt="product icon">
+              </a>
+              <a class="products-item__link" href="#">
+                <img src="images/icons/product-like.png" alt="product icon">
+              </a>
+            </div>
+            <div class="products-item__text">
+              <h5 class="products-item__title">
+                White chair
+              </h5>
+              <p class="products-item__price">
+                $29.00
+              </p>
+            </div>
+          </div>
+          <div class="products-item mix category-c">
+            <img src="images/products/8.png" alt="product">
+            <div class="products-item__link-box">
+              <a class="products-item__link" href="#">
+                <img src="images/icons/product-search.png" alt="product icon">
+              </a>
+              <a class="products-item__link" href="#">
+                <img src="images/icons/product-bag.png" alt="product icon">
+              </a>
+              <a class="products-item__link" href="#">
+                <img src="images/icons/product-like.png" alt="product icon">
+              </a>
+            </div>
+            <div class="products-item__text">
+              <h5 class="products-item__title">
+                Retro table
+              </h5>
+              <p class="products-item__price">
+                $29.00
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="info">
+      <div class="info__container">
+        <div class="info__items">
+          <div class="info-item">
+            <div class="info__images">
+              <img class="info-img" src="images/info/1.png" alt="lamp">
+            </div>
+            <div class="info__content">
+              <h4 class="title info__title">
+                Mirum Notare Tellus
+              </h4>
+              <p class="info__text">
+                LEDCornBulb Lamp 5W 7W 10W 12W 15W E26 E27LEDCornLight
+              </p>
+              <a class="info__link" href="#">View More</a>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info__images">
+              <img class="info-img" src="images/info/2.png" alt="lamp">
+            </div>
+            <div class="info__content">
+              <h4 class="title info__title">
+                Malesuada Tempor
+                Euismod
+              </h4>
+              <p class="info__text">
+                50W 8000lm Compact Size for HID StreetLightReplacementLEDCornLight
+              </p>
+              <a class="info__link" href="#">View More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="new">
+      <div class="container">
+        <h3 class="title">
+          New Design
+        </h3>
+        <div class="new__buttons">
+          <button type="button" class="new__btn mixitup-control-active" data-filter="all">All</button>
+          <button type="button" class="new__btn" data-filter=".category-a">Furnitures</button>
+          <button type="button" class="new__btn" data-filter=".category-b">Chairs</button>
+          <button type="button" class="new__btn" data-filter=".category-c">Lighting</button>
+          <button type="button" class="new__btn" data-filter=".category-d">Decor</button>
+        </div>
+        <div class="new__items">
+          <div class="new-item mix category-a">
+            <div class="new-item__text">
+            <h5 class="new-item__title">
+              Beat Flat Pendant
+              Black
+            </h5>
+            <p class="new-item__style">
+              Classic
+            </p>
+            </div>
+            <img class="new-item__img" src="images/new/1.png" alt="new design">
+            <div class="new-item__link-box">
+              <a class="new-item__link" href="#">
+                <img src="images/icons/product-search.png" alt="product icon">
+              </a>
+              <a class="new-item__link" href="#">
+                <img src="images/icons/product-bag.png" alt="product icon">
+              </a>
+              <a class="new-item__link" href="#">
+                <img src="images/icons/product-like.png" alt="product icon">
+              </a>
+            </div>
+          </div>
+          <div class="new-item mix category-c">
+            <div class="new-item__text">
+              <h5 class="new-item__title">
+                Lampe Sur Pieds
+                Bamboo
+              </h5>
+              <p class="new-item__style">
+                Classic
+              </p>
+            </div>
+            <img class="new-item__img" src="images/new/2.png" alt="new design">
+            <div class="new-item__link-box">
+              <a class="new-item__link" href="#">
+                <img src="images/icons/product-search.png" alt="product icon">
+              </a>
+              <a class="new-item__link" href="#">
+                <img src="images/icons/product-bag.png" alt="product icon">
+              </a>
+              <a class="new-item__link" href="#">
+                <img src="images/icons/product-like.png" alt="product icon">
+              </a>
+            </div>
+          </div>
+          <div class="new-item mix category-b">
+            <div class="new-item__text">
+              <h5 class="new-item__title">
+                Rattan Rocking
+                Chair
+              </h5>
+              <p class="new-item__style">
+                Classic
+              </p>
+            </div>
+            <img class="new-item__img new-item__chair" src="images/new/3.png" alt="new design">
+            <div class="new-item__link-box">
+              <a class="new-item__link" href="#">
+                <img src="images/icons/product-search.png" alt="product icon">
+              </a>
+              <a class="new-item__link" href="#">
+                <img src="images/icons/product-bag.png" alt="product icon">
+              </a>
+              <a class="new-item__link" href="#">
+                <img src="images/icons/product-like.png" alt="product icon">
+              </a>
+            </div>
+          </div>
+          <div class="new-item mix category-d">
+            <div class="new-item__text">
+              <h5 class="new-item__title">
+                Rattan Rocking
+                Chair
+              </h5>
+              <p class="new-item__style">
+                Classic
+              </p>
+            </div>
+            <img class="new-item__img" src="images/new/4.png" alt="new design">
+            <div class="new-item__link-box">
+              <a class="new-item__link" href="#">
+                <img src="images/icons/product-search.png" alt="product icon">
+              </a>
+              <a class="new-item__link" href="#">
+                <img src="images/icons/product-bag.png" alt="product icon">
+              </a>
+              <a class="new-item__link" href="#">
+                <img src="images/icons/product-like.png" alt="product icon">
+              </a>
+            </div>
+          </div>
+          <div class="new-item mix category-b">
+            <div class="new-item__text">
+              <h5 class="new-item__title">
+                Rattaan Rocking
+                Chair
+              </h5>
+              <p class="new-item__style">
+                Classic
+              </p>
+            </div>
+            <img class="new-item__img new-item__chair" src="images/new/5.png" alt="new design">
+            <div class="new-item__link-box">
+              <a class="new-item__link" href="#">
+                <img src="images/icons/product-search.png" alt="product icon">
+              </a>
+              <a class="new-item__link" href="#">
+                <img src="images/icons/product-bag.png" alt="product icon">
+              </a>
+              <a class="new-item__link" href="#">
+                <img src="images/icons/product-like.png" alt="product icon">
+              </a>
+            </div>
+          </div>
+          <div class="new-item mix category-d">
+            <div class="new-item__text">
+              <h5 class="new-item__title">
+                Lampe Sur Pieds
+                Bamboo
+              </h5>
+              <p class="new-item__style">
+                Classic
+              </p>
+            </div>
+            <img class="new-item__img" src="images/new/6.png" alt="new design">
+            <div class="new-item__link-box">
+              <a class="new-item__link" href="#">
+                <img src="images/icons/product-search.png" alt="product icon">
+              </a>
+              <a class="new-item__link" href="#">
+                <img src="images/icons/product-bag.png" alt="product icon">
+              </a>
+              <a class="new-item__link" href="#">
+                <img src="images/icons/product-like.png" alt="product icon">
+              </a>
+            </div>
+          </div>
+        </div>
+    </section>
+
+
+    <div class="video">
+      <a class="video-play" data-fancybox href="https://www.youtube.com/watch?v=lx3D2y-zlIE">
+        <img class="video-play__img" src="images/play.png" alt="Play button">
+      </a>
+    </div>
   </main>
   <footer class="footer">
     <div class="container">
@@ -128,7 +545,9 @@
           <a class="footer-top__email" href="mailto: contact@Glee.com">
             <span>Email:</span> contact@Glee.com
             Services
-          </h6>
+            </h6>
+        </div>
+        <div class="footer-top__item">
           <ul class="footer-top__list">
             <li class="footer-top__item">
               <a class="footer-top__link" href="#">About us</a>
