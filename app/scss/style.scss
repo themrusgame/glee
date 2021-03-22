@@ -100,6 +100,10 @@
     width: 200px;
     margin-right: 75px;
   }
+  &__list{
+    width: 150px;
+    flex-wrap: wrap;
+  }
   &__nav{
     margin-right: 160px;
   }
@@ -251,11 +255,13 @@
   }
   &__info-items{
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
   }
   &__info-item{
+    max-width: 590px;
+    width: 100%;
     min-height: 170px;
-    padding: 35px 125px;
+    padding: 35px;
     border-right: 1px solid #e8e4df;
     position: relative;
   }
@@ -264,7 +270,7 @@
       position: absolute;
       content: '';
       top: 40%;
-      left: 50px;
+      left: 20%;
       width: 52px;
       height: 54px;
       transform: translateY(-50%);
@@ -276,7 +282,7 @@
       position: absolute;
       content: '';
       top: 40%;
-      left: 50px;
+      left: 20%;
       width: 55px;
       height: 37px;
       transform: translateY(-50%);
@@ -284,11 +290,12 @@
     }
   }
   &__info-payment{
+    border: none;
     &::before{
       position: absolute;
       content: '';
       top: 40%;
-      left: 50px;
+      left: 20%;
       width: 54px;
       height: 53px;
       transform: translateY(-50%);
@@ -296,12 +303,18 @@
     }
   }
   &__info-title{
+    max-width: 210px;
+    margin: 0 auto;
+    display: block;
     font-size: 18px;
     line-height: 30px;
     @extend %dmsans-700;
     color: #414141;
   }
   &__info-text{
+    max-width: 210px;
+    margin: 0 auto;
+    display: block;
     font-size: 16px;
     line-height: 30px;
     @extend %dmsans-500;
@@ -424,7 +437,7 @@
     justify-content: space-between;
   }
   &-item{
-    position: relative;
+    // position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -435,9 +448,11 @@
     margin: 0 16px;
   }
   img{
-    position: absolute;
-    left: 80px;
-    top: -95px;
+    margin: -95px 30px 80px 50px;
+    margin-top: -95px;
+    // position: absolute;
+    // left: 80px;
+    // top: -95px;
   }
   &__content{
     margin-left: auto;
@@ -532,27 +547,6 @@
       align-items: center;
       transform: translateY(3000%);
       transition: all .4s;
-    }
-    &__link{
-      background-color: #fff;
-      width: 45px;
-      height: 45px;
-      border-radius: 50%;
-      margin: 0 7px; 
-      padding: 12px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      transition: all .4s;
-      &:hover{
-        background-color: rgb(253, 200, 200);
-        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-      }
-    }
-    &:hover{
-      .new-item__link-box{
-        transform: translateY(0);
-      }
     }
     &__img{
       margin: auto -33%;
