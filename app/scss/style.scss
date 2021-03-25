@@ -1011,9 +1011,25 @@
     &__inner{
       display: flex;
     }
-    &__filter{
+    &__filters{
       width: 270px;
       margin-right: 30px;
+    }
+    &__content{
+      max-width: 900px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      text-align: center;
+    }
+    & .products-item{
+      max-width: 260px;
+      margin-right: 30px;
+      margin-bottom: 40px;
+      &:nth-child(3n + 3){
+        margin-right: 0;
+      }
     }
   }
 
@@ -1173,6 +1189,64 @@
   .jq-ry-container>.jq-ry-group-wrapper>.jq-ry-group {
     margin-left: -4px;
 }
+
+.pagination{
+  margin-top: 68px;
+  display: flex;
+  justify-content: center;
+  &__list{
+    display: flex;
+  }
+  &__arrows{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
+    height: 50px;
+    padding: 15px 18px;
+    border: 1px solid $btnclr;
+    color: #243f4d;
+  }
+  &__item{
+    margin: 0 8px;
+  }
+  &__link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: 1px solid $btnclr;
+    color: #243f4d;
+    transform: all .3s;
+    &:hover{
+      background-color: $btnclr;
+    color: #fff;
+    }
+  }
+  &__item--active{
+    .pagination__link{
+      background-color: $btnclr;
+      color: #fff;
+    }
+  }
+  &__arrows{
+    &:hover{
+      background-color: $btnclr;
+      color: #fff;
+    }
+  }
+  &__prev{
+    margin-right: 8px;
+  }
+  &__next{
+    margin-left: 8px;
+  }
+}
+
+
+
+
 
 
 
