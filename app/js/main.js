@@ -1,6 +1,17 @@
 $(function () {
 
-
+  $('.filter-price__input').ionRangeSlider({
+    type: "double",
+    prefix: "$",
+    onStart: function (data) {
+      $('.filter-price__from').text(data.from);
+      $('.filter-price__to').text(data.to);
+    },
+    onChange: function (data) {
+      $('.filter-price__from').text(data.from);
+      $('.filter-price__to').text(data.to);
+    },
+  });
 
   $('.top-slider__inner').slick({
     arrows: false,
@@ -8,40 +19,24 @@ $(function () {
     fade: true
   });
 
+  $(".star").rateYo({
+    starWidth: "11px",
+    normalFill: "#d6d6d6",
+    ratedFill: "#ffcc00",
+    spacing: "8px",
+    readOnly: true
+  });
+
+  $('.rate').rateYo({
+    starWidth: "18px",
+    normalFill: "#d6d6d6",
+    ratedFill: "#ffcc00",
+    spacing: "13px",
+    readOnly: true
+  });
+
 
   var mixer = mixitup('.products__items');
   var mixer = mixitup('.new__items');
-
-  // var containerEl = document.querySelector('.products__items');
-  // var mixer;
-
-  // if (containerEl) {
-  //   mixer = mixitup(containerEl, {
-  //     selectors: {
-  //       control: '[data-filter]'
-  //     }
-  //   });
-  // }
-
-  // var containerEl1 = document.querySelector('.products__items');
-  // var containerEl2 = document.querySelector('.new__items');
-  // var mixer;
-  // var mixer1;
-
-  // if (containerEl1) {
-  //   mixer = mixitup(containerEl1, {
-  //     selectors: {
-  //       control: '[data-filter]'
-  //     }
-  //   });
-  // };
-
-  // if (containerEl2) {
-  //   mixer1 = mixitup(containerEl2, {
-  //     selectors: {
-  //       control: '[data-filter]'
-  //     }
-  //   });
-  // };
 
 });
