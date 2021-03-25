@@ -27,6 +27,14 @@ $(function () {
     readOnly: true
   });
 
+  $('.rate').rateYo({
+    starWidth: "18px",
+    normalFill: "#d6d6d6",
+    ratedFill: "#ffcc00",
+    spacing: "13px",
+    readOnly: true
+  });
+
 
   var mixer = mixitup('.products__items');
   var mixer = mixitup('.new__items');
