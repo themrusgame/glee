@@ -1,5 +1,29 @@
 $(function () {
 
+  $('.details-one__num').styler();
+
+  $('.details-related__items').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    prevArrow: '<button type="button" class="slick-prev"><img src="images/icons/slider-left.png" alt="arrow-left"></button>',
+    nextArrow: '<button type="button" class="slick-next"><img src="images/icons/slider-right.png" alt="arrow-right"></button>',
+  });
+
+  $('.details-slide__thumb').slick({
+    asNavFor: '.details-slide__big',
+    focusOnSelect: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    vertical: true,
+    draggable: false
+  });
+  $('.details-slide__big').slick({
+    asNavFor: '.details-slide__thumb',
+    draggable: false,
+    arrows: false,
+    fade: true
+  });
+
   $('.filter-price__input').ionRangeSlider({
     type: "double",
     prefix: "$",
