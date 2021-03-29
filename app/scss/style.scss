@@ -1464,6 +1464,9 @@
 .details-info{
   margin-top: 55px;
   font-size: 16px;
+  &__title{
+    margin-right: 5px;
+  }
   &__item{
     margin-bottom: 4px;
     display: flex;
@@ -1510,40 +1513,37 @@
 }
 
 
-.details-information{
+.details-tab{
   margin-top: 70px;
   margin-bottom: 120px;
-  &__form{
+  &__box{
     display: flex;
     justify-content: center;
     margin-bottom: 35px;
   }
-  &__label{
+  &__item{
     margin: 0 6px;
+    max-width: 240px;
+    border-radius: 4px;
+    width: 100%;
     height: 52px;
     background-color: #edf1f4;
-    display: block;
-    cursor: pointer;
-  }
-  &__input{
-    @extend %checkbox-hidden;
-    &:checked + .details-information__radio{
-      background-color: $btnclr;
-      color: #fff;
-    }
-  }
-  &__radio{
-    background-color: #edf1f4;
-    border-radius: 4px;
-    color: $title;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 240px;
-    height: 52px;
-    @extend %rubik-500;
+  }
+  &__item--active{
+    background-color: $btnclr;
+    color: #fff;
+  }
+  &__content-item{
+    display: none;
+    &.details-tab__content-item--active{
+      display: block;
+    }
   }
 }
+
 
 .details-related{
   &__title{
