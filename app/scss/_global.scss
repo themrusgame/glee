@@ -32,6 +32,12 @@ body{
   &__list{
     display: flex;
   }
+  &__link{
+    font-size: 18px;
+    line-height: 30px;
+    color: $atext;
+    @extend %rubik-400;
+  }
   &__item{
     font-size: 14px;
     @extend %rubik-400;
