@@ -789,7 +789,9 @@
     &__img{
       max-width: 570px;
       width: 100%;
-      object-fit: cover;
+      img{
+        object-fit: cover;
+      }
     }
     &__content{
       padding: 80px 0 90px;
@@ -983,7 +985,6 @@
       position: absolute;
       left: 0;
       bottom: -60px;
-      z-index: 10;
     }
     &__item-name{
       font-size: 22px;
