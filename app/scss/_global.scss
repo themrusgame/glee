@@ -86,3 +86,21 @@ a{
   color: $atext;
   @extend %rubik-400;
 }
+
+@media (max-width: 750px){
+  .title{
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 595px){
+  .title{
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 370px){
+  .title{
+    font-size: 18px;
+  }
+}
