@@ -702,8 +702,11 @@
       justify-content: space-around;
       align-items: center;
     }
-    &__logo{
+    &__log{
+      padding: 55px 0;
       background-color: #fef7f0;
+    }
+    &__logo{
       margin: 15px;
     }
   }
@@ -781,7 +784,7 @@
     margin-bottom: 70px;
     &__title{
       font-size: 24px;
-      line-height: 40px;
+      line-height: 26px;
       color: #243f4d;
       @extend %rubik-500;
       margin-bottom: 10px;
@@ -790,6 +793,7 @@
       padding-left: 30px !important;
     }
     &__list-item{
+      line-height: 20px;
       padding-left: 5px;
       margin-bottom: 30px;
       list-style-type: decimal-leading-zero;
@@ -1726,10 +1730,10 @@
 
 .blog-one{
   &__with-img{
-    display: flex;
+    margin-bottom: 60px;
   }
   &__with-text{
-    padding: 24px 0;
+    padding-top: 24px;
     p{
       margin-top: -20px;
     }
@@ -1737,20 +1741,18 @@
   &__left-img{
     float: left;
     margin-right: 25px;
-    margin-bottom: 40px;
   }
   &__right-img{
     float: right;
     margin-left: 25px;
-    margin-bottom: 40px;
   }
   &__text{
     padding-bottom: 20px;
     margin-bottom: 24px;
     border-bottom: 1px solid #ebebeb;
     img{
-      width: 320px;
-      height: 210px;
+      max-width: 320px;
+      width: 100%;
       object-fit: cover;
     }
     h3{
