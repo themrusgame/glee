@@ -4,6 +4,10 @@ $(function () {
     $('.menu__list').toggleClass('menu__list--active');
   });
 
+  $('.shop__filter-btn').on('click', function () {
+    $('.shop__filters').slideToggle();
+  });
+
   $('.footer-top__title').on('click', function () {
     $(this).next().slideToggle();
     $(this).toggleClass('active');
@@ -26,6 +30,27 @@ $(function () {
     slidesToScroll: 1,
     prevArrow: '<button type="button" class="slick-prev"><img src="images/icons/slider-left.png" alt="arrow-left"></button>',
     nextArrow: '<button type="button" class="slick-next"><img src="images/icons/slider-right.png" alt="arrow-right"></button>',
+    responsive: [
+      {
+        breakpoint: 1201,
+        settings: {
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 886,
+        settings: {
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 621,
+        settings: {
+          slidesToShow: 1
+        }
+      }
+  ],
+    
   });
 
   $('.details-slide__thumb').slick({
@@ -40,7 +65,13 @@ $(function () {
     asNavFor: '.details-slide__thumb',
     draggable: false,
     arrows: false,
-    fade: true
+    fade: true,
+    responsive: [{
+      breakpoint: 1071,
+      settings: {
+        draggable: true
+      }
+    }]
   });
 
   $('.filter-price__input').ionRangeSlider({
